@@ -1,0 +1,32 @@
+# Create the environment:
+# mamba env create -f environment.yml
+# or if you really want to use conda
+# conda env create -f environment.yml
+
+name: iecdt-earth-obs
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - numpy
+  - xarray
+  - pandas
+  - pip
+  - ipykernel
+  - scipy
+  - pytorch
+  - lightning
+  - torchvision
+  - torchmetrics
+  - matplotlib
+  - scikit-learn
+  - seaborn
+  - cartopy
+  - geopandas
+  - rioxarray
+  - shapely
+  - rasterio
+  - pip:
+      - tensorboard
+      - tensorboardX
+      - contextily
